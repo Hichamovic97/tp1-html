@@ -1,0 +1,188 @@
+/* --- 1. Variables & Setup --- */
+:root {
+    --primary: #e67e22;
+    --primary-hover: #d35400;
+    --glass: rgba(255, 255, 255, 0.15);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --text-dark: #2d3436;
+    --text-light: #636e72;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../images/arriere-plan.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- 2. Header Futuriste --- */
+.mainheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* Safari */
+    border-bottom: 1px solid var(--glass-border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo::before {
+    content: "🐾 SPCA";
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navlinks {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.navlinks a:hover {
+    color: var(--primary);
+}
+
+/* Réseaux Sociaux */
+.réseaux-sociaux {
+    display: flex;
+    gap: 15px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+.réseaux-sociaux a {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+
+.réseaux-sociaux a:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+/* --- 3. Main Content (Centrage parfait) --- */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Force la section à être grande pour voir l'image */
+    padding: 100px 0; /* Ajoute de l'espace pour ne pas étouffer le bouton */
+}
+
+/* --- 4. Bouton "Cyber-Mat" --- */
+.btn-adopter {
+    position: relative;
+    padding: 18px 45px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 12px; /* Carré arrondi plus moderne que le pilule */
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 25px rgba(230, 126, 34, 0.4);
+}
+
+.btn-adopter:hover {
+    background: var(--primary-hover);
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 15px 35px rgba(230, 126, 34, 0.6);
+}
+
+.btn-adopter:active {
+    transform: scale(0.98);
+}
+.footer {
+    background-color: #0f172a; /* Ton bleu nuit mat */
+    color: #f8fafc;
+    padding: 60px 10% 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Espace égal entre les colonnes */
+    flex-wrap: wrap; /* S'adapte sur mobile */
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1; /* Chaque section prend la même largeur */
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    color: var(--accent); /* Ta couleur de logo (Cyan/Violet) */
+    margin-bottom: 20px;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.footer-section h5 {
+    margin: 15px 0 5px;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li, .footer-section p {
+    color: #94a3b8; /* Texte gris clair mat */
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.footer-section li span {
+    color: #fff; /* Met en valeur les heures */
+    font-weight: bold;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.75rem;
+    color: #64748b;
+}
