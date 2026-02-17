@@ -4,8 +4,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
 }
-
+.logo{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 28px;
+    border-style: dashed;
+    color:#C97C5D;
+}
 body {
     background-image: url('../images/arriere-plan.jpg');
     background-size: cover;
@@ -41,7 +48,7 @@ nav {
 }
 
 .navlinks ul li a:hover {
-    color: #0cf30c;
+    color:#C97C5D;
 }
 
 .réseaux-sociaux a {
@@ -60,22 +67,7 @@ nav {
 
 
 
-.btn-adopter {
-    background-color: #C97C5D; /* Brun terre cuite */
-    color: white;
-    padding: 18px 35px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
 
-.btn-adopter:hover {
-    background-color: #4A5D4E;
-    transform: scale(1.05);
-}
 
 /* --- Footer (Le nouveau look) --- */
 footer {
@@ -111,7 +103,7 @@ footer {
 
 .footer-section h5 {
     margin: 10px 0 5px 0;
-    color: #0cf30c;
+    color:#C97C5D;
 }
 
 .footer-section p, .footer-section li {
@@ -130,21 +122,17 @@ footer {
     color: #888;
 }
 .options{
-    padding: 150px 400px;
+    padding: 100px;
     display: flex;
     align-items:flex-start
     flex-direction:row;
-    justify-content:space-between;
-    
-    
+    justify-content:space-around;
+      
     
  
 }
-.options p{
-    font-size: 19px;
-    background: rgba(255, 255, 255, 0.6);
 
-}
+
  h5{
     font-size: 24px;
     padding: 10px;
@@ -160,9 +148,99 @@ footer {
     padding: 30px;
     justify-content: end;
     border-radius: 15px;
+    border-style: groove;
+    border-color: #C97C5D;
+    border-width: 12px;
     line-height: 1.4;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    
 }
 .titre{
     max-width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.remarque{
+    margin : 50px 300px;
+     background: rgba(255, 255, 255, 0.9);
+     border-style:groove;
+     border-color: #C97C5D;
+     border-width: 10px;
+     border-radius: 10%;
+}
+
+.images{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+}
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: black ;
+   
+    
+}
+.option1, .option2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: ;
+    padding: 40px;
+     border-style: groove;
+    border-color: #C97C5D;
+    border-width: 10px;
+    border-radius: 15px;
+     background: rgba(255, 255, 255, 0.9);
+     margin: 0;
+     color:blanchedalmond;
+     font-weight: bolder;
+       backdrop-filter: blur(10px);
+}
+.option1{
+  background: rgba(255, 255, 255, 0.9);
+    background-image: url(../images/chien1.jpg );
+    background-size: cover;
+    .option1 {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("../images/chien1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    
+    padding: 40px;
+    border-radius: 15px;
+  
+}
+    
+   
+}
+.option2{
+  background-color: #C6BCB2;
+  .option1 {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("../images/chien1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+}
+    
+   .options .option1 h5, .options .option2 h5 {
+    color: white;
+    font-weight: bolder;
+   }
+
+    
 }
