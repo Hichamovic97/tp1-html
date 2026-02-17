@@ -1,18 +1,11 @@
-/* --- Global --- */
+﻿/* --- Global --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-family: sans-serif;
 }
-.logo{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
-    font-size: 28px;
-    border-style: dashed;
-    color:#C97C5D;
-}
+
 body {
     background-image: url('../images/arriere-plan.jpg');
     background-size: cover;
@@ -24,14 +17,22 @@ body {
     min-height: 100vh;
 }
 
+.logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 28px;
+    border-style: dashed;
+    color: #c97c5d;
+}
+
 /* --- Navbar --- */
 nav {
-    background-color: #2d3a3a; /* Vert plus sombre pour plus de classe */
+    background-color: #2d3a3a;
     padding: 1.5rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .navlinks ul {
@@ -48,34 +49,123 @@ nav {
 }
 
 .navlinks ul li a:hover {
-    color:#C97C5D;
+    color: #c97c5d;
 }
 
-.réseaux-sociaux a {
+.reseaux-sociaux a {
     color: white;
     font-size: 1.2rem;
     margin-left: 15px;
     transition: 0.3s;
 }
 
-.réseaux-sociaux a:hover {
-    color: #8C6A5D;
+.reseaux-sociaux a:hover {
+    color: #8c6a5d;
     transform: translateY(-3px);
     display: inline-block;
 }
 
+/* --- Main --- */
+main {
+    flex: 1;
+}
 
+.titre {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+.titre h3 {
+    max-width: 900px;
+    font-size: 2.1rem;
+    color: #153636;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 28px 30px;
+    border-radius: 18px;
+    border: 4px solid #c97c5d;
+    line-height: 1.35;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+}
 
+.options {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 24px;
+}
 
+h5 {
+    font-size: 24px;
+    padding: 10px;
+    font-family: sans-serif;
+}
 
-/* --- Footer (Le nouveau look) --- */
+.option1,
+.option2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: min(100%, 560px);
+    min-height: 320px;
+    padding: 30px 28px;
+    border: 2px solid #d5c4b7;
+    border-radius: 18px;
+    margin: 0;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+    backdrop-filter: blur(6px);
+}
+
+.option1 p,
+.option2 p {
+    font-size: 1.02rem;
+    line-height: 1.75;
+    max-width: 62ch;
+}
+
+.option1 h5,
+.option2 h5 {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+}
+
+.option1 {
+    background-image: linear-gradient(rgba(12, 37, 37, 0.72), rgba(12, 37, 37, 0.72)), url('../images/chien1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #f8f7f4;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.option2 {
+    background: rgba(255, 255, 255, 0.96);
+    color: #243535;
+    border-color: #dcc9ba;
+}
+
+.remarque {
+    margin: 12px auto 0;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #d9c8bc;
+    border-radius: 18px;
+    padding: 22px 24px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+    line-height: 1.7;
+    color: #2f3f3f;
+}
+
+/* --- Footer --- */
 footer {
-    background-color: rgba(45, 58, 58, 0.95); /* Semi-transparent */
+    background-color: rgba(45, 58, 58, 0.95);
     color: #ecf0f1;
     padding: 50px 0 20px 0;
     margin-top: 50px;
-    border-top: 4px solid #C97C5D; /* Rappel de la couleur du bouton */
+    border-top: 4px solid #c97c5d;
 }
 
 .footer-container {
@@ -94,7 +184,7 @@ footer {
 }
 
 .footer-section h4 {
-    color: #C97C5D;
+    color: #c97c5d;
     margin-bottom: 20px;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -103,10 +193,11 @@ footer {
 
 .footer-section h5 {
     margin: 10px 0 5px 0;
-    color:#C97C5D;
+    color: #c97c5d;
 }
 
-.footer-section p, .footer-section li {
+.footer-section p,
+.footer-section li {
     font-size: 0.9rem;
     line-height: 1.6;
     list-style: none;
@@ -117,130 +208,36 @@ footer {
     text-align: center;
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.8rem;
     color: #888;
 }
-.options{
-    padding: 100px;
-    display: flex;
-    align-items:flex-start
-    flex-direction:row;
-    justify-content:space-around;
-      
-    
- 
+
+@media (max-width: 980px) {
+    nav {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .navlinks ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 15px 12px;
+    }
+
+    .titre h3 {
+        font-size: 1.6rem;
+        margin: 0 10px;
+    }
+
+    .remarque {
+        margin: 20px 10px 0;
+    }
 }
 
-
- h5{
-    font-size: 24px;
-    padding: 10px;
-    justify-content:center
-    font-family: sans-serif;
-
-}
-.titre h3 {
-    max-width: 800px;        /* Évite que le texte ne s'étale trop sur les grands écrans */
-    font-size: 2.2rem;       /* Taille généreuse pour un titre */
-    color: #2d3a3a;          /* Le vert foncé de votre palette */
-    background: rgba(255, 255, 255, 0.6); /* Voile blanc pour lire par-dessus les chiens */
-    padding: 30px;
-    justify-content: end;
-    border-radius: 15px;
-    border-style: groove;
-    border-color: #C97C5D;
-    border-width: 12px;
-    line-height: 1.4;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    
-}
-.titre{
-    max-width: auto;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    
-}
-
-.remarque{
-    margin : 50px 300px;
-     background: rgba(255, 255, 255, 0.9);
-     border-style:groove;
-     border-color: #C97C5D;
-     border-width: 10px;
-     border-radius: 10%;
-}
-
-.images{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 50px;
-}
-.option {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background: black ;
-   
-    
-}
-.option1, .option2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: ;
-    padding: 40px;
-     border-style: groove;
-    border-color: #C97C5D;
-    border-width: 10px;
-    border-radius: 15px;
-     background: rgba(255, 255, 255, 0.9);
-     margin: 0;
-     color:blanchedalmond;
-     font-weight: bolder;
-       backdrop-filter: blur(10px);
-}
-.option1{
-  background: rgba(255, 255, 255, 0.9);
-    background-image: url(../images/chien1.jpg );
-    background-size: cover;
-    .option1 {
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url("../images/chien1.jpg");
-
-    background-size: cover;
-    background-position: center;
-    
-    padding: 40px;
-    border-radius: 15px;
-  
-}
-    
-   
-}
-.option2{
-  background-color: #C6BCB2;
-  .option1 {
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url("../images/chien1.jpg");
-
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 40px;
-    border-radius: 15px;
-}
-    
-   .options .option1 h5, .options .option2 h5 {
-    color: white;
-    font-weight: bolder;
-   }
-
-    
-}
