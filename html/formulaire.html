@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Famille d'accueil</title>
+    <link rel="stylesheet" href="../css/c3.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="mainnavbar">
+            <div class="logo">
+                <p>SPCA</p>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="../index.html">ACCUEIL</a></li>
+                    <li><a href="galerie.html">GALERIE</a></li>
+                    <li><a href="formulaire.html">FAMILLE D'ACCUEIL</a></li>
+                    <li><a href="#joindre">NOUS JOINDRE</a></li>
+                </ul>
+            </div>
+            <div class="reseaux-sociaux">
+                <a href="https://www.facebook.com/SPCAMontreal/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="form-wrapper">
+        <section class="form-container">
+            <h1>Formulaire Famille d'accueil</h1>
+            <p class="intro">Remplissez ce formulaire pour proposer votre aide comme famille d'accueil.</p>
+
+            <form action="#" method="post" class="foster-form">
+                <div class="form-group">
+                    <label for="nom-complet">Nom complet</label>
+                    <input type="text" id="nom-complet" name="nom-complet" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse courriel</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telephone">Numéro de téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="type-animal">Type d'animal souhaité</label>
+                    <select id="type-animal" name="type-animal" required>
+                        <option value="">Choisissez une option</option>
+                        <option value="chien">Chien</option>
+                        <option value="chat">Chat</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date-entretien">Date de disponibilité pour une entrevue</label>
+                    <input type="date" id="date-entretien" name="date-entretien" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="commentaires">Commentaires</label>
+                    <textarea id="commentaires" name="commentaires" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Soumettre</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="joindre" class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>NOS EMPLACEMENTS</h4>
+                <div class="info-block">
+                    <h5>Siège Montréal</h5>
+                    <p>124 Avenue de la Renaissance, H2X 1Y9</p>
+                </div>
+                <div class="info-block">
+                    <h5>Refuge Rive-Sud</h5>
+                    <p>45 Rue de la Tranquillité, J4P 2M1</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>HORAIRES D'OUVERTURE</h4>
+                <ul>
+                    <li>Lundi - Vendredi : <span>10h - 18h</span></li>
+                    <li>Samedi : <span>09h - 19h</span></li>
+                    <li>Dimanche : <span>Fermé au public</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>NOUS JOINDRE</h4>
+                <h5>Par téléphone :</h5>
+                <ul>
+                    <li>Montréal : (438) 686-8691</li>
+                    <li>Rive-Nord : (514) 558-9863</li>
+                    <li>Rive-Sud : (816) 742-8740</li>
+                    <li>Canada (Sans frais) : (514) 558-9863</li>
+                </ul>
+                <h5>Par courriel :</h5>
+                <p>contact@spca-futur.ca</p>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2026 SPCA Adoption - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+
+</html>
